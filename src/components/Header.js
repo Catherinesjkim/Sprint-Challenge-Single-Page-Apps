@@ -9,11 +9,15 @@ export default function Header() {
     <div>
     <header className="ui centered">
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
-      <SearchForm />
     </header>
     <nav>
       <Link to="/">Welcome!</Link>
+      <Link to="/characters">Characters</Link>
+      <Link to="/search">Search</Link>
     </nav>
+    <Route exact path="/" component={WelcomePage}></Route>
+    <Route path="/characters" component={CharacterList}></Route>
+    <Route path="/search" component={SearchForm}></Route>
     </div>
   );
 }

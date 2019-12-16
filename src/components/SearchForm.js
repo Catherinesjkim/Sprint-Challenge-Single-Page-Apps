@@ -32,8 +32,9 @@ export default function SearchForm() {
   return (
     <section className="search-form">
      <form>
-       <label htmlFor="name">Search:</label>
-       <input id="title" type="text" name="title" />
+       <label htmlFor="title">Search:</label>
+       <input id="title" type="text" name="title" onChange={handleChange} 
+       value={searchTerm} />
      </form>
      {searchResults.map(char =>(
        <CharacterCard url={char.image} names={char.name} gender={char.gender} local={char.location.name} specieis={char.species} />
