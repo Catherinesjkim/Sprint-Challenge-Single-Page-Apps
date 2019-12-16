@@ -25,23 +25,29 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ]  Explain benefit(s) using `client-side routing`?
+- [X]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: A client-side route happens when the route is handled internally by the JS that is loaded on the page. When a user clicks on a link, the URL changes but the request to the server is prevented. The adjustment to the URL will result in a changed state 
+Of the application. The changed state will ultimately result in a different view of the webpage. This could be the rendering of a new component, or even a request to a server for some data that the application will turn into some HTML elements. 
+
+It’s important to note that the whole page won’t refresh when using client-side routing. There are just some elements inside the application that will change. 
+
+Because less data is processed, routing between views is generally faster. 
+Smooth transitions and animations between views are easier to implement. 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ]  Create a forked copy of this project.
-- [ ]  Add TL as collaborator on GitHub.
-- [ ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ]  Implement the project on this branch, committing changes regularly.
-- [ ]  Push commits: `git push origin <firstName-lastName>`.
-- [ ]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
-- [ ]  **RUN** `yarn start` or `npm start` to fire up your React application.
+- [X]  Create a forked copy of this project.
+- [X]  Add TL as collaborator on GitHub.
+- [X]  Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [X]  Implement the project on this branch, committing changes regularly.
+- [X]  Push commits: `git push origin <firstName-lastName>`.
+- [X]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [X]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
+- [X]  **RUN** `yarn start` or `npm start` to fire up your React application.
 
 ### Exceeded rate limits?
 
