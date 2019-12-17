@@ -1,8 +1,13 @@
 import React from "react";
+import style from "styled-components";
+
+const Div = style.div`
+  background: #ff69b4;
+`;
 
 export default function CharacterCard({url, names, gender, local, species, status}) {
   return (
-    <div>
+    <Div>
       <div>
         <img src={url} alt="character" />
       </div>
@@ -10,6 +15,6 @@ export default function CharacterCard({url, names, gender, local, species, statu
         <p>Gender: {gender}</p>
         <p>Area: {local}</p>
         <p>Species: {species}</p>
-    </div>
+    </Div>
   )
 }
